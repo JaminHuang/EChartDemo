@@ -11,7 +11,7 @@ import { Link } from 'react-router';
 class Container extends Component {
     render() {
         const { children } = this.props;
-        return (<div>{children}这里是首页</div>)
+        return (<div>{children}</div>)
     }
 }
 

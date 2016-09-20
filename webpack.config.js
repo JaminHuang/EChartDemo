@@ -10,7 +10,7 @@ var webpack = require('webpack');
 var config = {
     devtool: 'source-map',
     entry: {
-        app: ['webpack-dev-server/client?http://localhost:3010', 'webpack/hot/dev-server', './src/index']
+        app: ['webpack-dev-server/client?http://localhost:3000', 'webpack/hot/dev-server', './src/index']
     },
     output: {
         path: path.join(__dirname, 'public'),

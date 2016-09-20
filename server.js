@@ -25,7 +25,7 @@ var server = new WebpackDevServer(compiler, {
     stats: {colors: true}
 });
 
-server.listen(3010, function (err, result) {
+server.listen(3000, function (err, result) {
     if (err)console.log(err);
-    open('http://localhost:3010');
+    open('http://localhost:3000');
 });
