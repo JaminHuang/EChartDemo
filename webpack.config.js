@@ -20,15 +20,15 @@ var config = {
     },
     module: {
         loaders: [
-            {test: /\.js$/, loaders: ['react-hot', 'babel'], include: [path.join(__dirname, 'src')]}
-        ]
+                {test: /\.js$/, loader: 'babel', include: path.join(__dirname, 'src')}
+            ]
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         //new webpack.optimize.CommonsChunkPlugin('shared.js'),
         new webpack.DefinePlugin({
             'process.env': {
-                'DEBUG': true
+                'DEBUG': false
             }
         })
     ]
