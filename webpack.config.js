@@ -28,7 +28,7 @@ var config = {
         //new webpack.optimize.CommonsChunkPlugin('shared.js'),
         new webpack.DefinePlugin({
             'process.env': {
-                'DEBUG': false
+                'DEBUG': true
             }
         })
     ]
